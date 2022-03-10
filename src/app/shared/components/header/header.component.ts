@@ -12,13 +12,17 @@ export class HeaderComponent implements OnInit {
 
   cartItem:any
   showSearchData:any;
-  constructor(public cartService:CartServiceService) { }
+  enableText:any = false;
+  constructor(private productservice:ApiServiceService,public cartService:CartServiceService) { }
   ngOnInit(): void {
 
   }
   nameChange(arg:any) {
+    this.enableText =true;
     console.log("modelchanged " + arg);
-    this.showSearchData = arg
+    this.productservice.getAllCategoryById(arg).subscribe((e)=>{
+      this.showSearchData = e;
+    })
   }
 
 }

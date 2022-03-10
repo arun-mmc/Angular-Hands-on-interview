@@ -12,7 +12,7 @@ import { ProfilepageComponent } from './components/profilepage/profilepage.compo
 import { HomeComponent } from './components/home/home.component';
 import { ProductComponent } from './components/product/product.component';
 
-
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,6 +23,7 @@ import { ProductComponent } from './components/product/product.component';
     ],
   imports: [
     CommonModule,
+    FormsModule,
     RouterModule.forChild([ {path:'home',component:HomeComponent},{path:'my-profile',component:ProfilepageComponent}]),
     
   ],

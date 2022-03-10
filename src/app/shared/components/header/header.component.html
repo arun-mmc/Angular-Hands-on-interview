@@ -11,8 +11,8 @@
                     <span class="input-group-text" id="addon-wrapping">&#128269;</span>
                     <input id="product-search-feild"  placeholder="Search products.." type="text" class="form-control" autocomplete="off" ngModel (ngModelChange)="nameChange($event)">
                   </div>
-                  <div class="dropdown-content" >
-                    <a >{{showSearchData}}</a>
+                  <div class="dropdown-content" [ngClass]="(enableText == 'true')?'active':'a'" >
+                    <a style="max-width: 300px;" >{{showSearchData}}</a>
                   </div>
               </div>
              

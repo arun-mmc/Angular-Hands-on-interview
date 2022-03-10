@@ -3,8 +3,8 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.9.
 ## Resulting images
 <img src="./Result-output/homepage-with-myprofile-popup.png" >
-<img src="./Result-output/productdetials-with-cart-item-adding.png" >
 <img src="./Result-output/productspage-with-category.png">
+<img src="./Result-output/productdetials-with-cart-item-adding.png" >
 
 ## Development server
 
